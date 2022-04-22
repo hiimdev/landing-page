@@ -1,0 +1,35 @@
+.partner {
+    background-color: $white-dark;
+    margin-bottom: 40px;
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-item:hover {
+        opacity: 0.5;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        padding-bottom: 50px;
+        .partner-list {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 50px;
+
+        .partner-list {
+            flex-direction: column;
+            padding-bottom: 50px;
+        }
+
+        .partner-item {
+            // height: 100px;
+            // margin-bottom: 30px;
+        }
+    }
+}

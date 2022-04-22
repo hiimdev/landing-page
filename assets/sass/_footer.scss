@@ -1,0 +1,124 @@
+.footer {
+    background-color: $white-darker;
+
+    &-wrapper {
+        padding: 200px 0 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &-social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-right: 60px;
+    }
+
+    &-logo {
+        width: 149px;
+        height: 36.23px;
+        margin-bottom: 26px;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    &-desc {
+        // width: 340px;
+        // height: 61.57px;
+        margin-bottom: 30px;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    &-link {
+        display: flex;
+        margin-bottom: 30px;
+
+        &-item {
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &-link ion-icon {
+        font-size: 40px;
+        color: $red-light;
+        margin-right: 20px;
+    }
+
+    &-monopoly {
+        color: $gray-light;
+    }
+
+    &-introduce-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &-introduce {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-right: 126px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        &-item {
+            padding-bottom: 10px;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+
+        span {
+            display: block;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+        .footer-wrapper {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .footer-social {
+            margin-right: 60px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .footer-wrapper {
+            flex-direction: column-reverse;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .footer-social {
+            padding-top: 50px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .footer-wrapper {
+            flex-direction: column-reverse;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .footer-introduce {
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+    }
+}

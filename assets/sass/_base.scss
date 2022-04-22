@@ -1,0 +1,91 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $primary-font;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: $gray;
+    background-color: $white;
+    overflow-x: hidden;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: $primary-font;
+    border: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $gray;
+}
+
+.heading {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+    color: $gray-dark;
+}
+
+.heading-large {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+    color: $gray-dark;
+}
+
+.btn {
+    width: 250px;
+    height: 60px;
+    background-color: $red-light;
+    color: $white;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    box-shadow: 0 40px 27px -11px rgb(245 56 56 / 35%);
+    cursor: pointer;
+    &:hover {
+        background-color: $orange-light;
+        color: $red-light;
+    }
+}
+
+.mb-130 {
+    margin-bottom: 130px;
+}
+
+.mb-90 {
+    margin-bottom: 90px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.pd {
+    padding: 80px 0 20px;
+}
+
+.mb-155 {
+    margin-bottom: 155px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.center {
+    text-align: center;
+}
