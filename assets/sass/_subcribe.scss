@@ -1,61 +1,111 @@
-.subcribe {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 10px;
-    position: absolute;
-    bottom: -15%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1140px;
-    height: 233px;
-    background-color: $white;
-    box-shadow: 0 6px 23px -11px black;
+// .subcribe {
+//     display: flex;
+//     justify-content: space-around;
+//     align-items: center;
+//     border-radius: 10px;
+//     position: absolute;
+//     bottom: -15%;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     width: 1140px;
+//     height: 233px;
+//     background-color: $white;
+//     box-shadow: 0 6px 23px -11px black;
 
-    // &-text {
-    //     // width: 410px;
-    //     // height: 116px;
-    // }
+//     // &-text {
+//     //     // width: 410px;
+//     //     // height: 116px;
+//     // }
 
+//     &-heading {
+//         width: 371.61px;
+//         // height: 80px;
+//         margin-bottom: 20px;
+//         line-height: 45px;
+//     }
+
+//     &-btn {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+
+//     @media screen and (min-width: 1024px) and (max-width: 1200px) {
+//         width: auto;
+//         padding: 0 100px;
+//     }
+
+//     @media screen and (max-width: 767px) {
+//         width: 100%;
+//         height: auto;
+//         flex-direction: column;
+//         align-items: center;
+//         justify-content: center;
+//         position: absolute;
+//         bottom: -18%;
+
+//         .subcribe-text {
+//             margin-top: 20px;
+//         }
+//         .subcribe-heading,
+//         .desc {
+//             padding: 0 10px;
+//             width: 100%;
+//             text-align: center;
+//         }
+
+//         .subcribe-btn {
+//             margin: 50px 0;
+//         }
+//     }
+// }
+
+.subscribe {
+    transform: translateY(50%);
     &-heading {
-        width: 371.61px;
-        // height: 80px;
-        margin-bottom: 20px;
-        line-height: 45px;
+        line-height: calc(45 / 35);
+        max-width: 371px;
+        font-size: 35px;
+        font-weight: 500;
+        color: $gray-dark;
     }
-
+    &-desc {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        color: $gray;
+    }
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 58.5px 70px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 114px rgba(#0d1025, 0.06);
+    }
     &-btn {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+}
 
-    @media screen and (min-width: 1024px) and (max-width: 1200px) {
-        width: auto;
-        padding: 0 100px;
-    }
-
-    @media screen and (max-width: 767px) {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        bottom: -18%;
-
-        .subcribe-text {
-            margin-top: 20px;
+@media screen and (max-width: 767px) {
+    .subscribe {
+        transform: translateY(0);
+        margin-top: 80px;
+        &-container {
+            padding: 30px 20px;
+            flex-direction: column;
+            align-items: unset;
+            gap: 20px 0;
+            a {
+                width: max-content;
+            }
         }
-        .subcribe-heading,
-        .desc {
-            padding: 0 10px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .subcribe-btn {
-            margin: 50px 0;
+        &-heading {
+            max-width: unset;
         }
     }
 }
